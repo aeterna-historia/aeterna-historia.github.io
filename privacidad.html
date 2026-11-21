@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Política de privacidad · Aeterna subida</title>
+<meta name="description" content="Qué datos de Google toca Aeterna subida, para qué y cómo se retira el permiso.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Tenor+Sans&display=swap">
+<style>
+/* Una columna de lectura a la izquierda, sobre la sala oscura de la casa; el oro solo en el nombre y en los enlaces. */
+:root {
+  --noche: #07090b;
+  --pizarra: #131a1f;
+  --acero: #5f7381;
+  --niebla: #c9d4da;
+  --marfil: #F1EEE7;
+  --oro: #F3D79A;
+  --resplandor: rgba(233, 196, 124, .45);
+  --nombre: "Tenor Sans", Outfit, "Segoe UI", sans-serif;
+  --letra: Outfit, "Segoe UI", system-ui, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { background: var(--noche); }
+body {
+  margin: 0;
+  background: var(--noche);
+  color: var(--marfil);
+  font-family: var(--letra);
+  font-size: 1.0625rem;
+  font-weight: 300;
+  line-height: 1.65;
+  padding-block: 3.5rem 4rem;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+.hoja { max-width: 40rem; margin-inline: auto; display: flex; flex-direction: column; gap: 2.75rem; }
+.cabecera { display: flex; flex-direction: column; gap: .9rem; }
+.sello {
+  font-family: var(--nombre);
+  font-size: .78rem;
+  letter-spacing: .32em;
+  text-transform: uppercase;
+  color: var(--niebla);
+}
+h1 {
+  margin: 0;
+  font-family: var(--nombre);
+  font-weight: 400;
+  font-size: clamp(1.9rem, 6.2vw, 2.9rem);
+  line-height: 1.15;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--oro);
+  text-shadow: 0 0 .5em var(--resplandor);
+  text-wrap: balance;
+  animation: entra .9s ease-out both;
+}
+.entrada { margin: 0; font-size: 1.2rem; color: var(--marfil); max-width: 34rem; }
+.fecha { margin: 0; font-size: .95rem; color: var(--niebla); font-variant-numeric: tabular-nums; }
+section { display: flex; flex-direction: column; gap: 1.6rem; }
+.bloque { display: flex; flex-direction: column; gap: .55rem; }
+h2 {
+  margin: 0;
+  font-family: var(--nombre);
+  font-weight: 400;
+  font-size: .86rem;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: var(--oro);
+}
+p, ul { margin: 0; }
+ul { padding-left: 1.15rem; display: flex; flex-direction: column; gap: .4rem; }
+li::marker { color: var(--acero); }
+a { color: var(--oro); text-underline-offset: .2em; text-decoration-thickness: 1px; }
+a:hover { color: var(--marfil); }
+a:focus-visible { outline: 2px solid var(--oro); outline-offset: 3px; border-radius: 2px; }
+.correo { font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.paso {
+  align-self: flex-start;
+  font-family: var(--nombre);
+  font-size: .86rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+.idioma {
+  border-top: 1px solid var(--pizarra);
+  padding-top: 2.5rem;
+}
+.idioma > .sello { color: var(--acero); }
+footer {
+  border-top: 1px solid var(--pizarra);
+  padding-top: 1.4rem;
+  font-size: .92rem;
+  color: var(--niebla);
+  display: flex; flex-wrap: wrap; gap: .5rem 1.5rem;
+}
+@keyframes entra { from { opacity: 0; transform: translateY(.35em); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { h1 { animation: none; } }
+</style>
+</head>
+<body>
+<main class="hoja" id="privacidad">
+  <header class="cabecera">
+    <span class="sello">Aeterna subida</span>
+    <h1>Política de privacidad</h1>
+    <p class="fecha">Última actualización: 21 de noviembre de 2026</p>
+    <a class="paso" href="#english" lang="en">English</a>
+  </header>
+
+  <section lang="es">
+    <div class="bloque">
+      <h2>Quién responde</h2>
+      <p>El titular del canal de YouTube Aeterna Historia, que es también el único usuario de la herramienta.</p>
+      <p class="correo">secondperspective.code@gmail.com</p>
+    </div>
+    <div class="bloque">
+      <h2>A qué datos de Google accede</h2>
+      <ul>
+        <li>En YouTube: los vídeos del canal y sus datos (título, descripción, miniatura, fecha de publicación).</li>
+        <li>En Google Drive: los ficheros del Drive del canal.</li>
+      </ul>
+      <p>Solo con el permiso que da el titular de esas cuentas en la pantalla de Google. La herramienta no accede a datos de ninguna otra persona.</p>
+    </div>
+    <div class="bloque">
+      <h2>Para qué los usa</h2>
+      <p>Para subir y programar los vídeos del canal, y para guardar y leer sus ficheros de producción. Para nada más.</p>
+    </div>
+    <div class="bloque">
+      <h2>Dónde se guardan</h2>
+      <p>Los ficheros siguen en el Google Drive del titular. Mientras se trabaja hay copias de paso en el ordenador y en el servidor privado del canal, que se borran al terminar. La llave que da el permiso se guarda en esos dos equipos, protegida, y no se publica.</p>
+    </div>
+    <div class="bloque">
+      <h2>Con quién se comparten</h2>
+      <p>Con nadie. La herramienta no vende ni cede estos datos y no los usa para publicidad. Esta página no usa cookies ni analítica propias.</p>
+    </div>
+    <div class="bloque">
+      <h2>Cómo retirar el permiso</h2>
+      <p>En la cuenta de Google, en <a href="https://myaccount.google.com/connections">Conexiones con aplicaciones y servicios de terceros</a>, se quita el acceso de «Aeterna subida». Desde ese momento la herramienta deja de poder entrar. Para pedir el borrado de cualquier dato, basta escribir al correo de arriba.</p>
+    </div>
+    <div class="bloque">
+      <h2>YouTube</h2>
+      <p>La herramienta usa los Servicios de la API de YouTube. Se aplican las <a href="https://www.youtube.com/t/terms">Condiciones del Servicio de YouTube</a> y la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>.</p>
+    </div>
+    <div class="bloque">
+      <h2>Cambios</h2>
+      <p>Si esta política cambia, la fecha de arriba cambia con ella.</p>
+    </div>
+  </section>
+
+  <section class="idioma" id="english" lang="en">
+    <span class="sello">English</span>
+    <div class="bloque">
+      <h2>Who is responsible</h2>
+      <p>The owner of the YouTube channel Aeterna Historia, who is also the tool's only user.</p>
+      <p class="correo">secondperspective.code@gmail.com</p>
+    </div>
+    <div class="bloque">
+      <h2>Google data it accesses</h2>
+      <ul>
+        <li>On YouTube: the channel's videos and their details (title, description, thumbnail, publishing date).</li>
+        <li>On Google Drive: the files in the channel's Drive.</li>
+      </ul>
+      <p>Only with the access the owner of those accounts grants on Google's consent screen. The tool does not access anyone else's data.</p>
+    </div>
+    <div class="bloque">
+      <h2>What it uses the data for</h2>
+      <p>To upload and schedule the channel's videos, and to store and read its production files. Nothing else.</p>
+    </div>
+    <div class="bloque">
+      <h2>Where the data is kept</h2>
+      <p>The files stay in the owner's Google Drive. While work is in progress there are temporary copies on the channel's computer and private server, deleted when the work is done. The access token is kept on those two machines, protected, and is never published.</p>
+    </div>
+    <div class="bloque">
+      <h2>Who it is shared with</h2>
+      <p>No one. The tool does not sell or transfer this data and does not use it for advertising. This page uses no cookies or analytics of its own.</p>
+    </div>
+    <div class="bloque">
+      <h2>How to revoke access</h2>
+      <p>In the Google Account, under <a href="https://myaccount.google.com/connections">Third-party apps and services</a>, remove access for “Aeterna subida”. From that moment the tool can no longer get in. To ask for any data to be deleted, write to the address above.</p>
+    </div>
+    <div class="bloque">
+      <h2>YouTube</h2>
+      <p>The tool uses YouTube API Services. The <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> apply.</p>
+    </div>
+    <div class="bloque">
+      <h2>Changes</h2>
+      <p>If this policy changes, the date above changes with it.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>Aeterna subida</span>
+    <a href="index.html">Página de inicio</a>
+  </footer>
+</main>
+</body>
+</html>

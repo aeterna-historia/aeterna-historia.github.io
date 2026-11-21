@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aeterna subida</title>
+<meta name="description" content="Herramienta privada del canal de YouTube Aeterna Historia: sube sus vídeos y guarda su material en Google Drive.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Tenor+Sans&display=swap">
+<style>
+/* Una columna de lectura a la izquierda, sobre la sala oscura de la casa; el oro solo en el nombre y en los enlaces. */
+:root {
+  --noche: #07090b;
+  --pizarra: #131a1f;
+  --acero: #5f7381;
+  --niebla: #c9d4da;
+  --marfil: #F1EEE7;
+  --oro: #F3D79A;
+  --resplandor: rgba(233, 196, 124, .45);
+  --nombre: "Tenor Sans", Outfit, "Segoe UI", sans-serif;
+  --letra: Outfit, "Segoe UI", system-ui, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { background: var(--noche); }
+body {
+  margin: 0;
+  background: var(--noche);
+  color: var(--marfil);
+  font-family: var(--letra);
+  font-size: 1.0625rem;
+  font-weight: 300;
+  line-height: 1.65;
+  padding-block: 3.5rem 4rem;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+.hoja { max-width: 40rem; margin-inline: auto; display: flex; flex-direction: column; gap: 2.75rem; }
+.cabecera { display: flex; flex-direction: column; gap: .9rem; }
+.sello {
+  font-family: var(--nombre);
+  font-size: .78rem;
+  letter-spacing: .32em;
+  text-transform: uppercase;
+  color: var(--niebla);
+}
+h1 {
+  margin: 0;
+  font-family: var(--nombre);
+  font-weight: 400;
+  font-size: clamp(1.9rem, 6.2vw, 2.9rem);
+  line-height: 1.15;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--oro);
+  text-shadow: 0 0 .5em var(--resplandor);
+  text-wrap: balance;
+  animation: entra .9s ease-out both;
+}
+.entrada { margin: 0; font-size: 1.2rem; color: var(--marfil); max-width: 34rem; }
+.fecha { margin: 0; font-size: .95rem; color: var(--niebla); font-variant-numeric: tabular-nums; }
+section { display: flex; flex-direction: column; gap: 1.6rem; }
+.bloque { display: flex; flex-direction: column; gap: .55rem; }
+h2 {
+  margin: 0;
+  font-family: var(--nombre);
+  font-weight: 400;
+  font-size: .86rem;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: var(--oro);
+}
+p, ul { margin: 0; }
+ul { padding-left: 1.15rem; display: flex; flex-direction: column; gap: .4rem; }
+li::marker { color: var(--acero); }
+a { color: var(--oro); text-underline-offset: .2em; text-decoration-thickness: 1px; }
+a:hover { color: var(--marfil); }
+a:focus-visible { outline: 2px solid var(--oro); outline-offset: 3px; border-radius: 2px; }
+.correo { font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.paso {
+  align-self: flex-start;
+  font-family: var(--nombre);
+  font-size: .86rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+.idioma {
+  border-top: 1px solid var(--pizarra);
+  padding-top: 2.5rem;
+}
+.idioma > .sello { color: var(--acero); }
+footer {
+  border-top: 1px solid var(--pizarra);
+  padding-top: 1.4rem;
+  font-size: .92rem;
+  color: var(--niebla);
+  display: flex; flex-wrap: wrap; gap: .5rem 1.5rem;
+}
+@keyframes entra { from { opacity: 0; transform: translateY(.35em); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { h1 { animation: none; } }
+</style>
+</head>
+<body>
+<main class="hoja" id="inicio">
+  <header class="cabecera">
+    <span class="sello">Aeterna Historia</span>
+    <h1>Aeterna subida</h1>
+    <p class="entrada">La herramienta privada con la que el canal de YouTube Aeterna Historia sube sus vídeos y guarda su material de trabajo.</p>
+    <a class="paso" href="#english" lang="en">English</a>
+  </header>
+
+  <section lang="es">
+    <div class="bloque">
+      <h2>Qué hace</h2>
+      <ul>
+        <li>Sube y programa los vídeos del canal en YouTube, con su título, su descripción y su miniatura.</li>
+        <li>Guarda y lee los ficheros de producción del canal en su propio Google Drive, desde el servidor donde se trabaja.</li>
+      </ul>
+    </div>
+    <div class="bloque">
+      <h2>Quién la usa</h2>
+      <p>Solo el titular del canal. No está abierta al público, no tiene registro y no ofrece ningún servicio a otras personas.</p>
+    </div>
+    <div class="bloque">
+      <h2>Qué permisos pide a Google</h2>
+      <ul>
+        <li>En YouTube: gestionar los vídeos del canal.</li>
+        <li>En Google Drive: ver, crear, cambiar y borrar los ficheros de ese Drive.</li>
+      </ul>
+      <p>Solo sobre las cuentas del canal, y solo cuando su titular da el permiso en la pantalla de Google.</p>
+    </div>
+    <div class="bloque">
+      <h2>Privacidad</h2>
+      <p>Qué datos toca, para qué y cómo se retira el permiso: <a href="privacidad.html">política de privacidad</a>.</p>
+    </div>
+    <div class="bloque">
+      <h2>Contacto</h2>
+      <p class="correo">secondperspective.code@gmail.com</p>
+    </div>
+  </section>
+
+  <section class="idioma" id="english" lang="en">
+    <span class="sello">English</span>
+    <div class="bloque">
+      <h2>What it does</h2>
+      <p>Aeterna subida is the private tool the YouTube channel Aeterna Historia uses to do two jobs:</p>
+      <ul>
+        <li>Upload and schedule the channel's videos on YouTube, with their title, description and thumbnail.</li>
+        <li>Store and read the channel's production files in its own Google Drive, from the server where the work is done.</li>
+      </ul>
+    </div>
+    <div class="bloque">
+      <h2>Who uses it</h2>
+      <p>Only the channel's owner. It is not open to the public, has no sign-up and offers no service to anyone else.</p>
+    </div>
+    <div class="bloque">
+      <h2>Google permissions it asks for</h2>
+      <ul>
+        <li>On YouTube: manage the channel's videos.</li>
+        <li>On Google Drive: see, create, edit and delete the files in that Drive.</li>
+      </ul>
+      <p>Only on the channel's own accounts, and only when their owner grants access on Google's consent screen.</p>
+    </div>
+    <div class="bloque">
+      <h2>Privacy</h2>
+      <p>What data it touches, what for, and how to revoke access: <a href="privacidad.html#english">privacy policy</a>.</p>
+    </div>
+    <div class="bloque">
+      <h2>Contact</h2>
+      <p class="correo">secondperspective.code@gmail.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>Aeterna subida</span>
+    <a href="privacidad.html">Política de privacidad</a>
+  </footer>
+</main>
+</body>
+</html>
